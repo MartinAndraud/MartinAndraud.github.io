@@ -416,6 +416,7 @@ a:hover {
   position: relative;
   padding-right: 10px;
   padding-left: 0;
+  color: #48abec;
 }
 
 .navbar-b.navbar-trans .nav-link,
@@ -435,11 +436,12 @@ a:hover {
   left: 0;
   height: 2px;
   transition: all 500ms ease;
+  color: #48abec;
 }
 
 .navbar-b.navbar-trans .nav-link:hover,
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #1B1B1B;
+  color: #48abec;
 }
 
 .navbar-b.navbar-trans .nav-link:hover:before,

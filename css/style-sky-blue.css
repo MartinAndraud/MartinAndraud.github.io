@@ -47,7 +47,7 @@ a:hover {
 }
 
 .color-text-a {
-  color: #4e4e4e;
+  color: #48abec;;
 }
 
 .box-shadow,
@@ -405,6 +405,7 @@ a:hover {
   background-color: transparent;
   padding-top: 1.563rem;
   padding-bottom: 1.563rem;
+color: #48abec;
 }
 
 .navbar-b.navbar-reduce {
@@ -421,7 +422,7 @@ a:hover {
 
 .navbar-b.navbar-trans .nav-link,
 .navbar-b.navbar-reduce .nav-link {
-  color: #fff;
+  color: #48abec;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -447,6 +448,7 @@ a:hover {
 .navbar-b.navbar-trans .nav-link:hover:before,
 .navbar-b.navbar-reduce .nav-link:hover:before {
   width: 35px;
+  color: #48abec;
 }
 
 .navbar-b.navbar-trans .show > .nav-link:before,

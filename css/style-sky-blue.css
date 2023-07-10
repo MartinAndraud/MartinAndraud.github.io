@@ -405,7 +405,6 @@ a:hover {
   background-color: transparent;
   padding-top: 1.563rem;
   padding-bottom: 1.563rem;
- color: #48abec;
 }
 
 .navbar-b.navbar-reduce {
@@ -460,11 +459,11 @@ a:hover {
 }
 
 .navbar-b.navbar-trans .nav-link:before {
-  background-color: #fff;
+  background-color: #48abec;
 }
 
 .navbar-b.navbar-trans .nav-link:hover {
-  color: #fff;
+  color: #48abec;
 }
 
 .navbar-b.navbar-trans .show > .nav-link,

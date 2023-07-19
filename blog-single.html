@@ -22,7 +22,7 @@
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-sky-blue.css" rel="stylesheet">
 
   <!-- =======================================================
     Theme Name: DevFolio
@@ -53,13 +53,13 @@
             <a class="nav-link js-scroll" href="/index.html#news">Fresh In</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#service">Publications</a>
+            <a class="nav-link js-scroll" href="/index.html#service">Publications</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#work">Sponsored research</a>
+            <a class="nav-link js-scroll" href="/index.html#work">Sponsored research</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#blog">Blog</a>
+            <a class="nav-link js-scroll" href="/index.html#blog">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="/index.html#group">My Team</a>
@@ -125,6 +125,11 @@
               <blockquote class="blockquote">
                 <p class="mb-0">Link to the paper: <a href="https://arxiv.org/abs/2304.07931" target="_blank"> arXiv </a></p>
               </blockquote>
+			  
+			   <p>
+                
+              </p>
+			  
               <p>
                <b> In a nutshell: </b> a methodology to decompose sparse tensors and reorder them as non-sparse representations ("cascade of Einsums") for more efficient hardware acceleration. 
                The process is based on fibertree decomposition and further improves existing accelerators such as Gamma or OuterSPACE
@@ -139,6 +144,34 @@
                <b> How? </b> The work abstracts sparse tensors into fiber trees, which are then used to modify the order of computations (the tensor ranks) 
 			       to build a tree of dependent Einsum operations (which are not sparse) to be accelerated on existing hardware platforms.
               </p>
+			  
+			  
+			   <p>
+               <b> In more details. </b> Lately, I have been interested in sparse Neural Networks (NN) hardware acceleration. NNs are becoming sparse for various reasons,
+			   e.g., pruning unuseful weights, quantizing the model's parameters, and removing (parts of) NN layers to compress the model. 
+			   All aim to increase energy efficiency and embed these NNs on the edge.
+              </p>			  
+			  
+			   <p>
+				NN computation can be represented by successive tensor operations involving the inputs, weights, and activations of each neuron and each layer 
+			   (See e.g., <a href="https://medium.com/mlait/tensors-representation-of-data-in-neural-networks-bbe8a711b93b" target="_blank"> HERE </a>). 
+				So AI acceleration can essentially mean acceleration of tensors.  
+              </p>		
+
+			   <p>
+				Yet, typical AI accelerators are efficient when processing NN layers with a high degree of parallelism, i.e.,
+				full tensors where "everyone connects to everyone". Spartity introduces zeros and cuts this parallelism and, with it, the accelerator's efficiency. 
+				</p>	
+				
+			   <p>
+				How do we make sparse tensors non-sparse again without recreating all computations we tried to avoid in the first place? 
+				An elegant solution in this TeAAL paper is to decompose the successive (sparse) tensors induced by a given NN computation and 
+				reorder them into a tree of non-sparse operations in a different order than initially laid out. So, we get an intermediate 
+				representation of non-sparse operations, here Einsum operations, but arranged in a tree-fashion depending on their execution order. 
+				The decomposition uses fiber trees, which facilitate reordering the ranks of the tensors and execute them efficiently on hardware. 
+				</p>					
+
+				
 			  
 			  			   <p>
                <b> Einsums explained: </b> <a href="https://rockt.github.io/2018/04/30/einsum" target="_blank"> HERE </a> 

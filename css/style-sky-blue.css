@@ -1320,3 +1320,55 @@ footer .credits a {
     bottom: 15px;
   }
 }
+
+/*======================================
+//--//-->   FRESH IN
+======================================*/
+
+.fresh-in-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.fresh-in-img-col {
+  flex: 0 0 20%;
+  max-width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fresh-in-img-col img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.fresh-in-img-col img:hover {
+  box-shadow: 0 4px 24px rgba(35,117,171,0.15);
+}
+
+.fresh-in-text-col {
+  flex: 1 1 80%;
+  max-width: 80%;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .fresh-in-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .fresh-in-img-col,
+  .fresh-in-text-col {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}

@@ -402,6 +402,14 @@ a:hover {
 //--//-->   NEW NAVBAR
 ======================================*/
 
+.navbar-b {
+  background: #fff !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  border-bottom: 1px solid #eaeaea;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .navbar-nav {
   display: flex;
   gap: 0.5rem;
@@ -419,7 +427,7 @@ a:hover {
   min-width: 120px;
   height: 40px;
   padding: 0 18px;
-  border-radius: 20px;
+  border-radius: 8px; /* less rounded */
   background: rgba(72, 171, 236, 0.08); /* subtle blue tint */
   color: #48abec !important;
   font-weight: 600;

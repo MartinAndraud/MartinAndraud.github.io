@@ -396,56 +396,9 @@ a:hover {
   }
 }
 
-
-
 /*======================================
-//--//-->   NEW NAVBAR
+//--//-->   NAVBAR
 ======================================*/
-
-.navbar-nav {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.navbar-nav .nav-item {
-  display: flex;
-  align-items: center;
-}
-
-.navbar-nav .nav-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 120px;
-  height: 40px;
-  padding: 0 18px;
-  border-radius: 20px;
-  background: rgba(72, 171, 236, 0.08); /* subtle blue tint */
-  color: #48abec !important;
-  font-weight: 600;
-  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-  text-align: center;
-  transition: background 0.2s, color 0.2s;
-}
-
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link:focus {
-  background: #48abec;
-  color: #fff !important;
-}
-
-
-
-
-
-
-
-
-
-
-/*======================================
-//--//-->   OLD NAVBAR
-
 
 .navbar-b {
   transition: all .5s ease-in-out;
@@ -591,8 +544,6 @@ a:hover {
   background-color: #48abec;
 }
 
-======================================*/
-
 /*--/ Hamburger Navbar /--*/
 
 .navbar-toggler {
@@ -647,9 +598,6 @@ a:hover {
   transform: rotate(-135deg);
   opacity: 0.9;
 }
-
-
-
 
 /*======================================
 //--//-->   INTRO
